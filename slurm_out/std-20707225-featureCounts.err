@@ -1,0 +1,54 @@
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.1.1
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Zeugodacus_cucurbitae_egg_4hr_IsoSeq.flnc.aligned.bam ||
+||                                                                            ||
+||             Output file : Zeugodacus_cucurbitae_egg_4hr_IsoSeq.counts.txt  ||
+||                 Summary : Zeugodacus_cucurbitae_egg_4hr_IsoSeq.counts. ... ||
+||              Paired-end : no                                               ||
+||        Count read pairs : no                                               ||
+||              Annotation : complete.genomic.gtf (GTF)                       ||
+||      Dir for temp files : /90daydata/pbarc/andy.lee/Zeugodacus_cucurbi ... ||
+||                                                                            ||
+||                 Threads : 16                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : not counted                                      ||
+||     Multiple alignments : primary alignment only                           ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||          Long read mode : yes                                              ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file complete.genomic.gtf ...                              ||
+||    Features : 350688                                                       ||
+||    Meta-features : 18220                                                   ||
+||    Chromosomes/contigs : 20                                                ||
+||                                                                            ||
+|| Process BAM file Zeugodacus_cucurbitae_egg_4hr_IsoSeq.flnc.aligned.bam...  ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 4215197                                              ||
+||    Successfully assigned alignments : 2905582 (68.9%)                      ||
+||    Running time : 1.87 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "/90daydata/pbarc/andy.l  ||
+|| ee/Zeugodacus_cucurbitae/isoseq_processing/egg_4hr/Zeugodacus_cucurbitae_  ||
+|| egg_4hr_IsoSeq.counts.txt.summary"                                         ||
+||                                                                            ||
+\\============================================================================//
+
