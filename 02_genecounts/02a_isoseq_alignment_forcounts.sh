@@ -26,7 +26,7 @@ source activate /project/pbarc/andy.lee/condaenvs/isoseq
 ##################################
 # input and output paths 
 ##################################
-# Demultiplexed and refined reads  
+# Demultiplexed and refined reads (not clustered or classified) 
 INPUT_PATH="/90daydata/pbarc/andy.lee/Zeugodacus_cucurbitae/isoseq_processing/egg_8hr/Zeugodacus_cucurbitae_egg_8hr_IsoSeq.flnc.bam"
 INPUT_NAME=$(basename "$INPUT_PATH" .bam) # get file name without path and .bam extension 
 

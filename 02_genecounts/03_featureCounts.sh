@@ -35,15 +35,6 @@ GTF="/90daydata/pbarc/andy.lee/Zeugodacus_cucurbitae/GCF_028554725.1/genomic.gtf
 
 OUTPUT_PATH="/90daydata/pbarc/andy.lee/Zeugodacus_cucurbitae/isoseq_processing/egg_8hr/"
 
-#####################################################
-# convert genome gff into gtf for featureCounts     #
-# gffread made a gtf that featureCounts didn't like #
-# using agat instead                                #
-#####################################################
-# conda install bioconda::agat
-# 
-#    --gtf_version 2.2 \
-#    -o /90daydata/pbarc/andy.lee/Zeugodacus_cucurbitae/GCF_028554725.1/genomic.gtf
 
 ###########################################
 # count using featureCounts               #  
@@ -55,10 +46,12 @@ OUTPUT_PATH="/90daydata/pbarc/andy.lee/Zeugodacus_cucurbitae/isoseq_processing/e
 
 featureCounts \
     -T 16 \
-    -a /90daydata/pbarc/haley.arnold/InsecticideResistance/new_isoseq_data/complete.genomic.gtf \
+    -a ${GTF} \
     -o ${OUTPUT_PATH}${INPUT_NAME}.counts.txt \
     -g gene_id \
     -t exon \
     -L \
     --primary \
     ${INPUT_PATH}
+
+       # -a /90daydata/pbarc/haley.arnold/InsecticideResistance/new_isoseq_data/complete.genomic.gtf \

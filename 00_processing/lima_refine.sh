@@ -58,10 +58,6 @@ mkdir -p "${OUTPUT_PATH}" # make output directory if it doesn't exist
 ##################################################
 # Trimming poly A tails and remove concatemers   #
 ##################################################
-isoseq refine ${OUTPUT_PATH}${OUTPUT}.NEB_5p--NEB_Clontech_3p.bam ${PRIMER_FASTA}  ${OUTPUT_PATH}${OUTPUT}.flnc.bam
+# isoseq refine ${OUTPUT_PATH}${OUTPUT}.NEB_5p--NEB_Clontech_3p.bam ${PRIMER_FASTA}  ${OUTPUT_PATH}${OUTPUT}.flnc.bam
 
-#####################################################
-# Cluster FLNC reads and generate transcripts 
-# Useful for isoform discovery  
-#####################################################
-isoseq cluster2 ${OUTPUT_PATH}${OUTPUT}.flnc.bam ${OUTPUT_PATH}${OUTPUT}.bam
+
