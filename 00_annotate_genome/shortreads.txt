@@ -1,0 +1,20 @@
+egg_4hr_rnaseq rawdata/rnaseq/Egg_4hr/Egg_4hr_R1.fastq.gz
+egg_4hr_rnaseq rawdata/rnaseq/Egg_4hr/Egg_4hr_R2.fastq.gz
+
+egg_8hr_rnaseq rawdata/rnaseq/Egg_8hr/Egg_8hr_R1.fastq.gz 
+egg_8hr_rnaseq rawdata/rnaseq/Egg_8hr/Egg_8hr_R2.fastq.gz 
+
+egg_16hr_rnaseq rawdata/rnaseq/Egg_16hr/Egg_16hr_R1.fastq.gz 
+egg_16hr_rnaseq rawdata/rnaseq/Egg_16hr/Egg_16hr_R2.fastq.gz 
+
+early_ovary_rnaseq rawdata/rnaseq/YO/YO_R1.fastq.gz
+early_ovary_rnaseq rawdata/rnaseq/YO/YO_R2.fastq.gz
+
+late_ovary_rnaseq rawdata/rnaseq/OO/OO_R1.fastq.gz
+late_ovary_rnaseq rawdata/rnaseq/OO/OO_R2.fastq.gz
+
+early_testes_rnaseq rawdata/rnaseq/YT/YT_R1.fastq.gz
+early_testes_rnaseq rawdata/rnaseq/YT/YT_R2.fastq.gz
+
+late_testes_rnaseq rawdata/rnaseq/OT/OT_R1.fastq.gz
+late_testes_rnaseq rawdata/rnaseq/OT/OT_R2.fastq.gz

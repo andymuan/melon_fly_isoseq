@@ -1,0 +1,7 @@
+## run in the command line
+## don't run in the head node
+## install software (do this only once) 
+# conda create --prefix /project/pbarc/andy.lee/condaenvs/isoseq 
+# conda install lima 
+# conda install bioconda::isoseq
+# conda install bioconda::pbmm2

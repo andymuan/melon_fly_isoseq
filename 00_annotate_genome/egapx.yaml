@@ -1,0 +1,4 @@
+genome: GCF_028554725.1_idZeuCucr1.2_genomic.fna
+taxid: 28588
+short_reads: shortreads.txt
+long_reads: longreads.txt

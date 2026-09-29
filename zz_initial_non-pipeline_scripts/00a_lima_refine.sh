@@ -16,14 +16,6 @@
 #SBATCH --error="/project/pbarc/andy.lee/Zeugodacus_cucurbitae/scripts/slurm_out/std-%j-%x.err" # job standard error file (%j replaced by job id)
 #SBATCH --account=ag100pest
 
-################################################################
-# LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
-################################################################
-###### install software (do this only once) 
-# conda create --prefix /project/pbarc/andy.lee/condaenvs/isoseq 
-# conda install lima 
-# conda install bioconda::isoseq
-# conda install bioconda::pbmm2
 
 ##### load modules #####
 module load miniconda3/25.11.1
@@ -59,5 +51,3 @@ mkdir -p "${OUTPUT_PATH}" # make output directory if it doesn't exist
 # Trimming poly A tails and remove concatemers   #
 ##################################################
 # isoseq refine ${OUTPUT_PATH}${OUTPUT}.NEB_5p--NEB_Clontech_3p.bam ${PRIMER_FASTA}  ${OUTPUT_PATH}${OUTPUT}.flnc.bam
-
-
