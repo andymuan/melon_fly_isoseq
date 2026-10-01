@@ -31,7 +31,7 @@ source activate /project/pbarc/andy.lee/condaenvs/isoseq
 
 INPUT_PATH="/90daydata/pbarc/andy.lee/Zeugodacus_cucurbitae/isoseq_processing/egg_8hr/Zeugodacus_cucurbitae_egg_8hr_IsoSeq.flnc.aligned.bam"
 INPUT_NAME=$(basename "$INPUT_PATH" .flnc.aligned.bam) # get file name without path and .bam extension 
-GTF="/90daydata/pbarc/andy.lee/Zeugodacus_cucurbitae/GCF_028554725.1/genomic.gtf"
+GTF="/90daydata/pbarc/andy.lee/Zeugodacus_cucurbitae/ref/Zeugodacus_cucurbitae_egapx/complete.genomic.gtf"
 
 OUTPUT_PATH="/90daydata/pbarc/andy.lee/Zeugodacus_cucurbitae/isoseq_processing/egg_8hr/"
 
@@ -42,8 +42,6 @@ OUTPUT_PATH="/90daydata/pbarc/andy.lee/Zeugodacus_cucurbitae/isoseq_processing/e
 # --primary count only primary alignments #
 ###########################################
 
-#using haley's gtf for now, but she doesn't know how she got it
-
 featureCounts \
     -T 16 \
     -a ${GTF} \
@@ -53,5 +51,3 @@ featureCounts \
     -L \
     --primary \
     ${INPUT_PATH}
-
-       # -a /90daydata/pbarc/haley.arnold/InsecticideResistance/new_isoseq_data/complete.genomic.gtf \

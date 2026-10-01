@@ -24,17 +24,21 @@
 #   3. sourcing it and calling it below
 ################################################################
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPT_DIR="/project/pbarc/andy.lee/Zeugodacus_cucurbitae/scripts"
 
-source "${SCRIPT_DIR}/confit.sh"
-source "${SCRIPT_DIR}/isoseq_processing/01_processing.sh"
-source "${SCRIPT_DIR}/classification/02_classification.sh"
-source "${SCRIPT_DIR}/genecounts/03_genecounts.sh"
+source "${SCRIPT_DIR}/config.sh"
+source "${SCRIPT_DIR}/01_processing/01_processing.sh"
+#source "${SCRIPT_DIR}/02_classification/02_classification.sh"
+source "${SCRIPT_DIR}/03_genecounts/03a_alignment_genecounts.sh"
 
 set_dataset_vars "${SLURM_ARRAY_TASK_ID}"
 echo "[Array task ${SLURM_ARRAY_TASK_ID}] Running pipeline for dataset: ${DATASET}"
 
 ##### run stages in order — comment out any you don't want this run #####
-run_processing
-run_classification
-run_genecounts
+# run_processing 
+# merge_flnc_bams  
+run_alignment_for_genecount 
+
+## these steps have not yet been tested 
+#run_genecounts # needs to be after run_alignment_for_genecount
+#run_classification

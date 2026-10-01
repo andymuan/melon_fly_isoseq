@@ -1,0 +1,4 @@
+# This is a pipeline to clean, refine, process, and classify isoseq data 
+# 01 is removes primer and trims poly A tails 
+# 01 expects one bam file per run, so if there are multiple runs for the same sample, please combine beforehand
+

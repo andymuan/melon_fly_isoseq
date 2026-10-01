@@ -5,3 +5,4 @@
 # conda install lima 
 # conda install bioconda::isoseq
 # conda install bioconda::pbmm2
+# conda install bioconda::pbbam 
