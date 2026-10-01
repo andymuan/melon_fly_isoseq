@@ -17,7 +17,7 @@
 # LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
 
 # module load miniconda
-module load egapx/0.5.2 
+module load egapx/1.0.1 
 
 # source activate /project/pbarc/sheina.sim/condaenvs/egapx
 
